@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="" />
-    <!-- Feuille de Style CSS -->
-    <link rel="stylesheet" href="../www/css/style.css" />
     <!-- NORMALIZE CSS -->
-    <link rel="stylesheet" href="../www/css/normalize.css" />
+    <link rel="stylesheet" href="www/css/normalize.css" />
     <!-- FONT-AWESOME -->
     <link
       rel="stylesheet"
@@ -22,17 +20,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="www/css/style.css" />
     <title>Reservia</title>
   </head>
   <body>
     <div class="container">
       <!-- Header -->
       <header>
-        <img src="www/img/logo/Reservia@3x.png" alt="logo" />
+        <img class="logo" src="www/img/logo/Reservia@3x.png" alt="logo" />
         <nav>
-          <ul>
+          <ul class="nav-link">
             <li><a href="#accommodation">Hébergements</a></li>
-            <li><a href="#activities">Activités</a></li>
+            <li><a href="#activities" class="activities">Activités</a></li>
             <li><a href="#">S'inscrire</a></li>
           </ul>
         </nav>
@@ -41,36 +40,51 @@
       <!-- Partie Principale MAIN -->
       <main>
         <section class="searchSection">
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <h1 class="search-title">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
           <p>En plein centre-ville ou en pleine nature</p>
           <div class="searchBar">
-            <div>
+            <div class="location-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <div>
-              <input type="search" />
+              <input type="search" value="Marseille, France" />
             </div>
             <div>
-              <button>rechercher</button>
+              <button id="btn">rechercher</button>
             </div>
           </div>
-          <p>Filtres</p>
-          <ul class="filter">
-            <li>
-              <span><i class="fas fa-money-bill-wave"></i></span>Economique
-            </li>
-            <li>
-              <span><i class="fas fa-child"></i></span>Familial
-            </li>
-            <li>
-              <span><i class="fas fa-heart"></i></span>Romantique
-            </li>
-            <li>
-              <span><i class="fas fa-dog"></i></span>Animaux autorisés
-            </li>
-          </ul>
+          <div class="filter-group">
+            <p>Filtres</p>
+            <ul class="filter">
+              <li>
+                <p>
+                  <span><i class="fas fa-money-bill-wave filter-icon"></i></span
+                  >Economique
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><i class="fas fa-child filter-icon"></i></span>Familial
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><i class="fas fa-heart filter-icon"></i></span
+                  >Romantique
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><i class="fas fa-dog filter-icon"></i></span>Animaux
+                  autorisés
+                </p>
+              </li>
+            </ul>
+          </div>
           <p class="info">
-            <span><i class="fas fa-info-circle"></i></span>
+            <i class="fas fa-info-circle"></i>
             Plus de 500 logements sont disponibles dans cette ville
           </p>
         </section>

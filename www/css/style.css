@@ -1,0 +1,121 @@
+/* --- = CONTAINER --- */
+* {
+  box-shadow: border-box;
+}
+.container {
+  font-family: "Raleway", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+/* --- = HEADER ---  */
+header {
+  padding-top: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 150px;
+}
+.nav-link {
+  display: flex;
+  margin-right: 10px;
+}
+nav li {
+  list-style-type: none;
+}
+nav a:hover {
+  border-top: 1px solid #0065fc;
+  color: #0065fc;
+}
+nav a {
+  /* font-size: 22px; */
+  text-decoration: none;
+  padding-top: 2em;
+  margin-right: 2em;
+}
+
+/* --- = MAIN --- */
+
+/**  @subsection searchSection */
+
+.searchBar {
+  display: flex;
+  height: 45px;
+}
+.search-title {
+  font-size: 18px;
+}
+.location-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #f2f2f2;
+}
+div input {
+  border: 0.5px solid #f2f2f2;
+  height: 45px;
+  text-align: center;
+  font-weight: 900;
+}
+#btn {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* font-size: 18px; */
+  text-align: center;
+  background-color: #0065fc;
+  color: #fff;
+  text-transform: capitalize;
+  border: none;
+  height: 45px;
+}
+
+/**  @subsection Filter */
+.filter-group {
+  display: flex;
+}
+.filter-group p {
+  align-self: center;
+}
+.filter {
+  display: flex;
+  font-weight: bold;
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter li {
+  list-style-type: none;
+  margin-left: 1em;
+}
+.filter p {
+  border: 3px solid #f2f2f2;
+  padding: 8px 20px 8px 0px;
+  border-radius: 20px;
+}
+span {
+  border: 3px solid #deebff;
+  border-radius: 22032013px;
+  padding: 8px 20px;
+  background-color: #deebff;
+  margin-right: 0.5em;
+  position: relative;
+}
+.filter-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: 1em;
+  color: #0065fc;
+}
+
+.fa-info-circle {
+  border-radius: 22032013px;
+  background-color: #0065fc;
+  color: #fff;
+}
