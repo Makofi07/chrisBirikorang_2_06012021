@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
 }
 .logo {
-  width: 150px;
+  width: 130px;
 }
 .nav-link {
   display: flex;
@@ -35,6 +35,7 @@ nav a {
   text-decoration: none;
   padding-top: 2em;
   margin-right: 2em;
+  color: #000;
 }
 
 /* --- = MAIN --- */
@@ -196,7 +197,7 @@ div input {
   color: currentColor;
 }
 
-.framing img {
+.framingImg {
   width: 100%;
   height: 60%;
   border-top-left-radius: 25px;
@@ -233,6 +234,34 @@ aside.mostFamous {
 }
 
 /**  @subsection Activities */
+#activities {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+}
+.mosaic {
+  display: flex;
+  background-color: purple;
+}
+.oldport {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 25%;
+  flex: auto;
+  border: 1px solid chartreuse;
+  border-radius: 25px;
+  background-color: #fff;
+  text-decoration: none;
+}
+.oldport img {
+  height: 90%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.oldport h4 {
+  padding-left: 10px;
+}
 
 /* --- = FOOTER --- */
 footer {
