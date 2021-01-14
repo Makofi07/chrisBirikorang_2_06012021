@@ -1,6 +1,6 @@
 /* --- = CONTAINER --- */
 * {
-  box-shadow: border-box;
+  box-sizing: border-box;
 }
 .container {
   font-family: "Raleway", sans-serif;
@@ -64,7 +64,6 @@ div input {
 #btn {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  /* font-size: 18px; */
   text-align: center;
   background-color: #0065fc;
   color: #fff;
@@ -97,7 +96,7 @@ div input {
   padding: 8px 20px 8px 0px;
   border-radius: 20px;
 }
-span {
+.filter-span {
   border: 3px solid #deebff;
   border-radius: 22032013px;
   padding: 8px 20px;
@@ -113,9 +112,122 @@ span {
   margin-right: 1em;
   color: #0065fc;
 }
-
+.info {
+  margin-bottom: 3em;
+}
 .fa-info-circle {
   border-radius: 22032013px;
   background-color: #0065fc;
   color: #fff;
 }
+
+/**  @subsection = MAIN-CONTENT */
+
+.sideBySide {
+  display: flex;
+  justify-content: space-between;
+}
+
+/**  @subsection Hébergements */
+#accommodation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px;
+  flex: 2;
+  margin-right: 3em;
+}
+#accomodation h2 {
+  margin-bottom: 3em;
+}
+.framing {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  flex-direction: column;
+  display: flex;
+  width: 25%;
+  flex: auto;
+  border: 1px solid olive;
+  height: 40%;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: #fff;
+  margin: 10px;
+  text-decoration: none;
+}
+.card-content {
+  font-size: 13px;
+  padding-left: 0.5em;
+  color: #000;
+  margin: 0;
+}
+.card-content h3 {
+  margin: 0;
+  padding: 10px 0 4px 0;
+}
+.card-content ul {
+  margin: 0;
+  display: flex;
+  padding-left: 0;
+}
+.card-content p {
+  margin: 0;
+  padding: 4px 0;
+}
+.card-content li {
+  list-style-type: none;
+}
+.star {
+  font-size: 10px;
+  color: #0065fc;
+}
+.price {
+  font-weight: bold;
+}
+.pinUp {
+  font-weight: bold;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.framing img {
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/**  @subsection Les Plus Populaires */
+aside.mostFamous {
+  flex: 1;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+.mostFamous-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mostFamous-title h2 {
+  margin-right: 2em;
+}
+.thumbnail {
+  display: flex;
+  background-color: #fff;
+}
+.card-picture {
+  display: flex;
+}
+.card-picture img {
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.picture-content {
+}
+
+/* --- = FOOTER --- */
