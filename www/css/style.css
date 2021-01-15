@@ -5,6 +5,7 @@
 .container {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  word-spacing: 1px;
 }
 .wrapper {
   width: 90%;
@@ -138,6 +139,7 @@ div input {
   flex-wrap: wrap;
   background-color: #f2f2f2;
   border-radius: 20px;
+  height: max-content;
   padding: 20px;
   flex: 2;
   margin-right: 3em;
@@ -154,16 +156,16 @@ div input {
   display: flex;
   width: 25%;
   flex: auto;
-  border: 1px solid olive;
-  height: 40%;
+  height: 30vh;
   padding: 5px;
   border-radius: 25px;
   background-color: #fff;
-  margin: 10px;
+  margin: 25px;
   text-decoration: none;
+  box-shadow: 0px 0px 16px 1px rgb(0, 0, 0, 0.75);
 }
 .card-content {
-  font-size: 13px;
+  font-size: 0.68rem;
   padding-left: 0.5em;
   color: #000;
   margin: 0;
@@ -202,6 +204,7 @@ div input {
   height: 60%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  object-fit: cover;
 }
 
 /**  @subsection Les Plus Populaires */
@@ -270,7 +273,7 @@ footer {
   padding: 2em 0;
   align-items: baseline;
   background-color: #f2f2f2;
-  width: 100%;
+  /* width: 100%; */
 }
 
 article ul {
