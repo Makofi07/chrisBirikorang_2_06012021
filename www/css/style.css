@@ -364,6 +364,48 @@ article li {
   }
   .fa-search {
     display: block;
-    color: #0065fc;
+    border: 1px solid #000;
+    background-color: #0065fc;
+    color: #fff;
+  }
+  /**  Mqueries @subsection = MAIN-CONTENT */
+
+  .sideBySide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /**  Mqueries @subsection Activities */
+
+  .mosaic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  figure {
+    width: 100%;
+    height: 50%;
+  }
+  .oldport img,
+  .calanquesParc img,
+  .auto {
+    height: 150px;
+  }
+  /* .pomeguesImg {
+    height: 224.85px;
+  } */
+  .upAnddown {
+    margin: 0;
+  }
+  .calanquesParc {
+    margin-right: 0;
+  }
+  /* --- = Mqueries FOOTER */
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer article {
+    padding: 1em 2em;
   }
 }
