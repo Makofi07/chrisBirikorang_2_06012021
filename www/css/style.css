@@ -148,9 +148,6 @@ div input {
   margin-right: 3em;
   margin-bottom: 2em;
 }
-#accomodation h2 {
-  margin-bottom: 3em;
-}
 .framing {
   display: flex;
   flex-wrap: wrap;
@@ -359,6 +356,9 @@ article li {
 /* MEDIA QUERIES */
 
 @media (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+  }
   #btn {
     display: none;
   }
@@ -375,12 +375,54 @@ article li {
     flex-direction: column;
   }
 
+  /**  Mqueries @subsection Les Plus Populaires */
+  aside.mostFamous {
+    border-radius: 0px;
+  }
+
+  /**  Mqueries @subsection Hébergements */
+
+  #accommodation {
+    align-items: center;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    order: 2;
+  }
+  #accommodation h2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 1.5em 0 0.1em 0;
+  }
+
+  .framing {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .card {
+    width: 100%;
+    padding: 5px;
+    margin: 1.5em 0;
+  }
+
   /**  Mqueries @subsection Activities */
 
   .mosaic {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  .mosaic a {
+    width: 90%;
+  }
+  #activities h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    padding-left: 2em;
   }
   figure {
     width: 100%;
@@ -391,9 +433,18 @@ article li {
   .auto {
     height: 150px;
   }
+  .oldport,
+  .calanquesParc {
+    margin: 2em 0;
+  }
   /* .pomeguesImg {
     height: 224.85px;
   } */
+  .upAnddown,
+  .upAnddown_Right {
+    align-items: center;
+    width: 100%;
+  }
   .upAnddown {
     margin: 0;
   }
