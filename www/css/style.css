@@ -419,34 +419,76 @@ article li {
     margin-bottom: 2.5em;
   }
   .searchBar {
-    justify-content: center;
-    margin-bottom: 2.5em;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
   }
   .search-title {
-    text-align: center;
+    margin-left: 44px;
     font-size: 21px;
     margin-bottom: 0.5em;
   }
   div input {
     border-right: none;
-    position: relative;
+    /* position: relative; */
+    height: 65px;
   }
-
+  .location-icon {
+    width: 48px;
+    height: 65px;
+  }
   .search-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
   .fa-search {
+    border: none;
     position: absolute;
-    border-radius: 9px;
-    padding: 13px;
-    right: 20px;
+    border-radius: 19px;
+    padding: 23px;
+    left: -17px;
+    top: 0.5px;
+  }
+  .filter-group {
+    flex-direction: column;
   }
   .filter-group p {
     align-self: flex-start;
+    padding-left: 1.5em;
     font-weight: 800;
     font-size: 18px;
+    margin-bottom: 0.5em;
+  }
+  .filter {
+    margin: 0;
+    padding-left: 0px;
+    flex-wrap: nowrap;
+  }
+  .filter p {
+    background-color: gold;
+    margin: 0;
+    padding: 20px 12px 17px 0px;
+    border-radius: 35px;
+    border-left: none;
+  }
+  .filter-span {
+    padding: 16px 25px;
+  }
+  .filter li {
+    margin-bottom: 3em;
+  }
+  .filter li:nth-child(3) {
+    align-self: self-end;
+    margin-top: 4em;
+    margin-left: -20em;
+  }
+  .filter li:nth-child(4) {
+    align-self: flex-end;
+    margin: 0em 0 -1em -10em;
+  }
+  .info {
+    margin-top: 5em;
   }
   /**  Mqueries @subsection = MAIN-CONTENT */
 
