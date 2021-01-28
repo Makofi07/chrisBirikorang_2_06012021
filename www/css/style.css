@@ -285,6 +285,9 @@ aside.mostFamous {
   flex-direction: column;
   margin-bottom: 2em;
 }
+#activities h2 {
+  margin-top: 2em;
+}
 .mosaic {
   display: flex;
 }
@@ -318,6 +321,7 @@ aside.mostFamous {
 .upAnddown_Right {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .upAnddown h3 {
   background-color: #fff;
@@ -337,9 +341,9 @@ figure {
   box-shadow: 0px 0px 1px 0px rgb(0, 0, 0, 0.75);
 }
 
-.upAnddown a:nth-child(2) {
+/* .upAnddown a:nth-child(2) {
   margin-top: 3em;
-}
+} */
 .upAnddown_Right a:nth-child(2) {
   margin-top: 2.5em;
 }
@@ -348,6 +352,7 @@ figure {
 footer {
   display: flex;
   justify-content: space-around;
+  margin-top: 4em;
   padding: 2em 0;
   align-items: baseline;
   background-color: #f2f2f2;
@@ -427,7 +432,7 @@ article li {
     margin-bottom: 2.5em;
   }
   .searchBar {
-    margin-left: 1.5em;
+    margin-left: -3.5em;
     margin-bottom: 1.5em;
   }
   .search-title {
@@ -460,6 +465,7 @@ article li {
   }
   .filter-group {
     flex-direction: column;
+    margin-left: -125px;
   }
   .filter-group p {
     align-self: flex-start;
@@ -476,12 +482,12 @@ article li {
   .filter p {
     background-color: gold;
     margin: 0;
-    padding: 20px 12px 17px 0px;
+    padding: 14px 12px 14px 0px;
     border-radius: 35px;
     border-left: none;
   }
   .filter-span {
-    padding: 16px 25px;
+    padding: 10px 21px;
   }
   .filter li {
     margin-bottom: 3em;
@@ -489,7 +495,7 @@ article li {
   .filter li:nth-child(3) {
     align-self: self-end;
     margin-top: 4em;
-    margin-left: -20em;
+    margin-left: -19em;
   }
   .filter li:nth-child(4) {
     align-self: flex-end;
@@ -530,13 +536,20 @@ article li {
     flex-direction: column;
     align-items: center;
     width: 90%;
+    height: max-content;
   }
   .card {
     width: 100%;
+    height: 200px;
     padding: 5px;
     margin: 1.5em 0;
   }
-
+  #accomodation p,
+  .showMore {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 1em;
+  }
   /**  Mqueries @subsection Activities */
 
   .mosaic {
@@ -549,10 +562,10 @@ article li {
     width: 90%;
   }
   #activities h2 {
-    text-align: center;
+    align-self: flex-start;
     font-size: 18px;
     margin: 0;
-    padding-left: 2em;
+    padding-left: 1.5em;
   }
   figure {
     width: 100%;
