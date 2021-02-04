@@ -32,7 +32,6 @@ nav a:hover {
   color: #0065fc;
 }
 nav a {
-  /* font-size: 22px; */
   text-decoration: none;
   padding-top: 2em;
   margin-right: 2em;
@@ -128,9 +127,6 @@ div input {
   margin-right: 1em;
   color: #0065fc;
 }
-/* .filter-icon:hover {
-  color: #deebff;
-} */
 .info {
   margin-bottom: 3em;
 }
@@ -243,7 +239,7 @@ aside.mostFamous {
   margin: 1em 0;
 }
 .mostFamous-title h2 {
-  margin-right: 2em;
+  margin-right: 1.5em;
 }
 .aside-framing {
   display: flex;
@@ -342,7 +338,7 @@ aside.mostFamous {
 }
 
 figcaption {
-  font-size: 1rem;
+  font-size: 2vh;
   color: currentColor;
   padding: 15px;
   font-weight: 800;
@@ -353,9 +349,6 @@ figure {
   box-shadow: 0px 0px 1px 0px rgb(0, 0, 0, 0.75);
 }
 
-/* .upAnddown a:nth-child(2) {
-  margin-top: 3em;
-} */
 .upAnddown_Right a:nth-child(2) {
   margin-top: 2.5em;
 }
@@ -378,13 +371,15 @@ article li {
   padding: 8px 0;
 }
 
-/* MEDIA QUERIES */
+/* --- = MEDIA QUERIES --- */
 
 /* appareils équipés d'écran dont la taille est inférieur à 375px*/
 @media (max-width: 375px) {
   .wrapper {
     width: 100%;
   }
+  /* --- = Mqueries HEADER max-width 375px ---  */
+
   header {
     display: flex;
     flex-flow: column;
@@ -411,7 +406,6 @@ article li {
     padding-right: 1.5em;
     border-bottom: 2px solid #f2f2f2;
     padding-bottom: 1em;
-    /* padding-bottom: 1.5em; */
   }
 
   .register {
@@ -431,12 +425,14 @@ article li {
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 3em;
-    /* padding-bottom: 1.5em; */
   }
+  /* --- = Mqueries MAIN max-width 375px ---  */
 
   main {
     width: 100%;
   }
+
+  /* --- = Mqueries @subsection searchSection max-width 375px ---  */
   #btn {
     display: none;
   }
@@ -462,7 +458,6 @@ article li {
   }
   div input {
     border-right: none;
-    /* position: relative; */
     height: 65px;
   }
   .location-icon {
@@ -522,19 +517,19 @@ article li {
   .info {
     margin-top: 5em;
   }
-  /**  Mqueries @subsection = MAIN-CONTENT */
+  /**  Mqueries @subsection = MAIN-CONTENT  max-width 375px*/
 
   .sideBySide {
     display: flex;
     flex-direction: column;
   }
 
-  /**  Mqueries @subsection Les Plus Populaires */
+  /**  Mqueries @subsection Les Plus Populaires max-width 375px*/
   aside.mostFamous {
     border-radius: 0px;
   }
 
-  /**  Mqueries @subsection Hébergements */
+  /**  Mqueries @subsection Hébergements  max-width 375px*/
 
   #accommodation {
     align-items: center;
@@ -568,7 +563,7 @@ article li {
     align-self: flex-start;
     padding-left: 1em;
   }
-  /**  Mqueries @subsection Activities */
+  /**  Mqueries @subsection Activities  max-width 375px*/
 
   .mosaic {
     display: flex;
@@ -601,9 +596,7 @@ article li {
   .calanquesParc {
     margin: 2em 0;
   }
-  /* .pomeguesImg {
-    height: 224.85px;
-  } */
+
   .upAnddown,
   .upAnddown_Right {
     align-items: center;
@@ -615,7 +608,7 @@ article li {
   .calanquesParc {
     margin-right: 0;
   }
-  /* --- = Mqueries FOOTER */
+  /* --- = Mqueries FOOTER  max-width 375px*/
   footer {
     display: flex;
     flex-direction: column;
@@ -625,7 +618,363 @@ article li {
   }
 }
 
+/* Appareils  équipés d'écran dont la taille d'écran est compris entre 376px et 550px*/
+
+@media (min-width: 376px) and (max-width: 550px) {
+  .container {
+    background-color: yellow;
+  }
+  /* --- = Mqueries HEADER width between 376px and 550px ---  */
+
+  .logo {
+    margin-bottom: 1em;
+  }
+  header {
+    flex-direction: column;
+  }
+  .nav-link {
+    padding-left: 5px;
+    margin-right: 0px;
+  }
+  /* --- = Mqueries @subsection searchSection width between 376px and 550px ---  */
+
+  .searchSection {
+    font-size: 1.9vh;
+  }
+  nav a {
+    padding-top: 0.5em;
+    margin-right: 1em;
+  }
+
+  .theFilter {
+    padding-top: 1.5em;
+  }
+
+  /* --- = Mqueries @subsection Hébergements & Les plus populaires width between 376px and 550px ---  */
+
+  .sideBySide {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  aside.mostFamous {
+    order: 1;
+    margin-bottom: 2em;
+  }
+  .mostFamous-title h2 {
+    font-size: 2.5vh;
+  }
+  #accommodation {
+    order: 2;
+    margin-right: 0;
+  }
+  #accommodation h2 {
+    font-size: 2.5vh;
+  }
+  .framing {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: max-content;
+  }
+  .card {
+    width: 100%;
+    height: 200px;
+    margin: 10px 12px;
+  }
+  /* --- = Mqueries @subsection Activités width between 376px and 550px ---  */
+
+  #activities h2 {
+    font-size: 2.5vh;
+    margin: 20px 0 -10px 29px;
+  }
+  .mosaic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mosaic a {
+    width: 90%;
+  }
+
+  figure {
+    width: 100%;
+    height: 50%;
+  }
+  .frioul {
+    margin-top: 1.5em;
+  }
+  .oldport img,
+  .calanquesParc img,
+  .auto {
+    height: 150px;
+  }
+  .oldport,
+  .calanquesParc {
+    margin: 1.5em 0;
+  }
+
+  .upAnddown,
+  .upAnddown_Right {
+    align-items: center;
+    width: 100%;
+  }
+  .upAnddown {
+    margin: 0;
+  }
+  .calanquesParc {
+    margin-right: 0;
+  }
+
+  /* --- = Mqueries FOOTER  width between 376px and 550px */
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer article {
+    padding: 0em 2em;
+  }
+}
+
+/* Appareils  équipés d'écran dont la taille d'écran est compris entre 551px et 767px*/
+
+@media (min-width: 551px) and (max-width: 767px) {
+  .container {
+    background-color: aqua;
+  }
+  /* --- = Mqueries HEADER width between 551px and 767px ---  */
+
+  nav a {
+    margin-right: 1em;
+  }
+  /* --- = Mqueries @subsection searchSection width between 551px and 767px ---  */
+
+  .search-title {
+    font-size: 2.2vh;
+  }
+  .searchSection {
+    font-size: 1.9vh;
+  }
+
+  .filter-group p {
+    align-self: flex-start;
+  }
+  .theFilter {
+    padding-top: 1.5em;
+  }
+  /* --- = Mqueries @subsection Hébergements & Les plus populaires width between 551px and 767px ---  */
+
+  .sideBySide {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  aside.mostFamous {
+    order: 1;
+    margin-bottom: 2em;
+  }
+  .mostFamous-title {
+    margin: 0;
+  }
+  .thumbnail {
+    margin: 0.5em 0 1em 0;
+  }
+  .card-picture {
+    width: 50%;
+  }
+  #accommodation {
+    order: 2;
+    margin-right: 0;
+  }
+  .framing {
+    height: 600px;
+    max-width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .card {
+    height: 30%;
+  }
+  /* --- = Mqueries @subsection Activités width between 551px and 767px ---  */
+
+  #activities h2 {
+    margin-bottom: 0;
+  }
+  .mosaic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mosaic a {
+    width: 400px;
+    height: 150px;
+  }
+  .height-150 {
+    height: 150px;
+  }
+
+  .oldport,
+  .calanquesParc {
+    margin: 2.5em 0 1em;
+  }
+  .pomegues {
+    margin: 2.5em 0 0.5em;
+  }
+  .frioul {
+    margin: 3em 0 1em;
+  }
+  .laGarde {
+    margin: 2.5em 0 1em;
+  }
+  .parcLongChamp {
+    margin-bottom: 2em;
+  }
+  .oldport img,
+  .calanquesParc img {
+    width: 400px;
+    height: 150px;
+  }
+  /* --- = Mqueries FOOTER  width between 551px and 767px */
+
+  footer {
+    font-size: 1.8vh;
+  }
+}
+
 /* Appareils  équipés d'écran dont la taille d'écran est compris entre 768px et 991px*/
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    background-color: chartreuse;
+  }
+  /* --- = Mqueries @subsection searchSection width between 768px and 991px ---  */
+
+  .search-title {
+    font-size: 2.5vh;
+  }
+  .filter {
+    padding-left: 0;
+  }
+  .filter p {
+    padding: 8px 10px 8px 0px;
+    font-size: 1.5vw;
+  }
+  .info {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  /* --- = Mqueries @subsection Hébergements & Les plus populaires width between 768px and 991px ---  */
+
+  .card {
+    height: 30%;
+  }
+  .card-content {
+    font-size: 0.68rem;
+    padding-bottom: 5px;
+  }
+  #accommodation {
+    margin-right: 2em;
+  }
+  #accommodation h2 {
+    font-size: 2vh;
+  }
+
+  .mostFamous-title {
+    margin: 16px 21px 20px 15px;
+  }
+  .mostFamous-title h2 {
+    font-size: 2.5vh;
+    margin-right: 0.5em;
+  }
+  .thumbnail {
+    width: 85%;
+  }
+  .card-picture {
+    width: 100%;
+  }
+  .picture-content {
+    padding-left: 5px;
+    max-width: 90px;
+  }
+  .picture-content ul {
+    margin-top: 5px;
+  }
+  /* --- = Mqueries @subsection Activités width between 768px and 991px ---  */
+
+  #activities {
+    margin-bottom: 0;
+  }
+  #activities h2 {
+    font-size: 2vh;
+  }
+  .oldport img,
+  .calanquesParc img {
+    height: 450px;
+  }
+  .upAnddown {
+    margin: 0 10px;
+  }
+  .upAnddown_Right {
+    margin-left: -1.5em;
+  }
+  figcaption {
+    font-size: 1.3vh;
+  }
+  .longchamp {
+    height: 200px;
+  }
+}
+
+/* Appareils  équipés d'écran dont la taille d'écran est compris entre 992px et 1199px*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    background-color: darksalmon;
+  }
+  /* --- = Mqueries @subsection searchSection width between 992px and 1199px ---  */
+
+  .search-title {
+    font-size: 2.5vh;
+  }
+  .filter {
+    padding-left: 0;
+  }
+  .filter p {
+    padding: 8px 15px 8px 0px;
+  }
+
+  /* --- = Mqueries @subsection Hébergements & Les plus populaires width between 992px and 1199px ---  */
+
+  #accommodation {
+    margin-right: 2em;
+    padding: 30px 8px;
+  }
+  #accommodation h2 {
+    font-size: 3vh;
+    margin: 0.5em 0 1em 1em;
+  }
+  .framing {
+    padding: 0.5em;
+  }
+  .card {
+    width: 29%;
+    height: 40%;
+    margin: 20px 10px;
+  }
+
+  .mostFamous-title h2 {
+    font-size: 3vh;
+    margin-right: 1em;
+  }
+
+  .thumbnail {
+    width: 85%;
+  }
+  /* --- = Mqueries @subsection Activités width between 992px and 1199px ---  */
+
+  figcaption {
+    font-size: 1.6vh;
+  }
 }
