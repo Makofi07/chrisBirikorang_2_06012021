@@ -426,13 +426,13 @@ article li {
     padding-left: 2em;
     padding-right: 3em;
   }
-  /* --- = Mqueries MAIN max-width 375px ---  */
+  /* ---  Mqueries MAIN max-width 375px ---  */
 
   main {
     width: 100%;
   }
 
-  /* --- = Mqueries @subsection searchSection max-width 375px ---  */
+  /* ---  Mqueries @subsection searchSection max-width 375px ---  */
   #btn {
     display: none;
   }
@@ -608,7 +608,7 @@ article li {
   .calanquesParc {
     margin-right: 0;
   }
-  /* --- = Mqueries FOOTER  max-width 375px*/
+  /* --- Mqueries FOOTER  max-width 375px*/
   footer {
     display: flex;
     flex-direction: column;
@@ -633,7 +633,7 @@ article li {
     padding-left: 5px;
     margin-right: 0px;
   }
-  /* --- = Mqueries @subsection searchSection width between 376px and 550px ---  */
+  /* ---  Mqueries @subsection searchSection width between 376px and 550px ---  */
 
   .searchSection {
     font-size: 1.9vh;
@@ -647,7 +647,7 @@ article li {
     padding-top: 1.5em;
   }
 
-  /* --- = Mqueries @subsection Hébergements & Les plus populaires width between 376px and 550px ---  */
+  /* ---  Mqueries @subsection Hébergements & Les plus populaires width between 376px and 550px ---  */
 
   .sideBySide {
     flex-direction: column;
@@ -679,7 +679,7 @@ article li {
     height: 200px;
     margin: 10px 12px;
   }
-  /* --- = Mqueries @subsection Activités width between 376px and 550px ---  */
+  /* --- Mqueries @subsection Activités width between 376px and 550px ---  */
 
   #activities h2 {
     font-size: 2.5vh;
@@ -724,7 +724,7 @@ article li {
     margin-right: 0;
   }
 
-  /* --- = Mqueries FOOTER  width between 376px and 550px */
+  /* --- Mqueries FOOTER  width between 376px and 550px */
   footer {
     display: flex;
     flex-direction: column;
@@ -742,7 +742,7 @@ article li {
   nav a {
     margin-right: 1em;
   }
-  /* --- = Mqueries @subsection searchSection width between 551px and 767px ---  */
+  /* ---  Mqueries @subsection searchSection width between 551px and 767px ---  */
 
   .search-title {
     font-size: 2.2vh;
@@ -757,7 +757,7 @@ article li {
   .theFilter {
     padding-top: 1.5em;
   }
-  /* --- = Mqueries @subsection Hébergements & Les plus populaires width between 551px and 767px ---  */
+  /* --- Mqueries @subsection Hébergements & Les plus populaires width between 551px and 767px ---  */
 
   .sideBySide {
     flex-direction: column;
@@ -790,7 +790,7 @@ article li {
   .card {
     height: 30%;
   }
-  /* --- = Mqueries @subsection Activités width between 551px and 767px ---  */
+  /* --- Mqueries @subsection Activités width between 551px and 767px ---  */
 
   #activities h2 {
     margin-bottom: 0;
@@ -830,7 +830,7 @@ article li {
     width: 400px;
     height: 150px;
   }
-  /* --- = Mqueries FOOTER  width between 551px and 767px */
+  /* --- Mqueries FOOTER  width between 551px and 767px */
 
   footer {
     font-size: 1.8vh;
@@ -860,7 +860,7 @@ article li {
     margin-bottom: 2em;
   }
 
-  /* --- = Mqueries @subsection Hébergements & Les plus populaires width between 768px and 991px ---  */
+  /* ---  Mqueries @subsection Hébergements & Les plus populaires width between 768px and 991px ---  */
 
   .card {
     height: 30%;
@@ -896,7 +896,7 @@ article li {
   .picture-content ul {
     margin-top: 5px;
   }
-  /* --- = Mqueries @subsection Activités width between 768px and 991px ---  */
+  /* --- Mqueries @subsection Activités width between 768px and 991px ---  */
 
   #activities {
     margin-bottom: 0;
@@ -936,7 +936,7 @@ article li {
     padding: 8px 15px 8px 0px;
   }
 
-  /* --- = Mqueries @subsection Hébergements & Les plus populaires width between 992px and 1199px ---  */
+  /* --- Mqueries @subsection Hébergements & Les plus populaires width between 992px and 1199px ---  */
 
   #accommodation {
     margin-right: 2em;
@@ -963,7 +963,7 @@ article li {
   .thumbnail {
     width: 85%;
   }
-  /* --- = Mqueries @subsection Activités width between 992px and 1199px ---  */
+  /* --- Mqueries @subsection Activités width between 992px and 1199px ---  */
 
   figcaption {
     font-size: 1.6vh;
