@@ -373,7 +373,7 @@ article li {
 
 /* --- = MEDIA QUERIES --- */
 
-/* appareils équipés d'écran dont la taille est inférieur à 375px*/
+/* appareils équipés d'écran dont la taille est inférieur à 480px*/
 @media (max-width: 480px) {
   .container {
     background-color: aqua;
@@ -381,7 +381,7 @@ article li {
   .wrapper {
     width: 100%;
   }
-  /* --- = Mqueries HEADER max-width 375px ---  */
+  /* --- = Mqueries HEADER max-width 480px ---  */
 
   header {
     display: flex;
@@ -431,13 +431,13 @@ article li {
     padding-left: 0.5em;
     padding-right: 1em;
   }
-  /* ---  Mqueries MAIN max-width 375px ---  */
+  /* ---  Mqueries MAIN max-width 480px ---  */
 
   main {
     width: 100%;
   }
 
-  /* ---  Mqueries @subsection searchSection max-width 375px ---  */
+  /* ---  Mqueries @subsection searchSection max-width 480px ---  */
   #btn {
     display: none;
   }
@@ -527,19 +527,19 @@ article li {
   .info {
     margin-top: 5em;
   }
-  /**  Mqueries @subsection = MAIN-CONTENT  max-width 375px*/
+  /**  Mqueries @subsection = MAIN-CONTENT  max-width 480px*/
 
   .sideBySide {
     display: flex;
     flex-direction: column;
   }
 
-  /**  Mqueries @subsection Les Plus Populaires max-width 375px*/
+  /**  Mqueries @subsection Les Plus Populaires max-width 480px*/
   aside.mostFamous {
     border-radius: 0px;
   }
 
-  /**  Mqueries @subsection Hébergements  max-width 375px*/
+  /**  Mqueries @subsection Hébergements  max-width 480px*/
 
   #accommodation {
     align-items: center;
@@ -573,7 +573,7 @@ article li {
     align-self: flex-start;
     padding-left: 1em;
   }
-  /**  Mqueries @subsection Activities  max-width 375px*/
+  /**  Mqueries @subsection Activities  max-width 480px*/
 
   .mosaic {
     display: flex;
@@ -618,7 +618,7 @@ article li {
   .calanquesParc {
     margin-right: 0;
   }
-  /* --- Mqueries FOOTER  max-width 375px*/
+  /* --- Mqueries FOOTER  max-width 480px*/
   footer {
     display: flex;
     flex-direction: column;
@@ -630,15 +630,29 @@ article li {
 /* 
 
 
-/* Appareils  équipés d'écran dont la taille d'écran est compris entre 551px et 767px*/
+/* Appareils  équipés d'écran dont la taille d'écran est compris entre 481px et 767px*/
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* --- = Mqueries HEADER width between 551px and 767px ---  */
+  /* --- = Mqueries HEADER width between 481px and 767px ---  */
 
-  nav a {
-    margin-right: 1em;
+  header {
+    flex-direction: column;
   }
-  /* ---  Mqueries @subsection searchSection width between 551px and 767px ---  */
+  nav {
+    justify-content: space-around;
+    display: flex;
+    border-bottom: 1em;
+  }
+  nav a {
+    margin: 1em;
+    padding-bottom: 1em;
+  }
+  nav a:hover {
+    border-top: 0;
+    border-bottom: 2px solid #0065fc;
+    /* border-bottom-color: #0065fc; */
+  }
+  /* ---  Mqueries @subsection searchSection width between 481px and 767px ---  */
 
   .search-title {
     font-size: 2.2vh;
@@ -653,7 +667,7 @@ article li {
   .theFilter {
     padding-top: 1.5em;
   }
-  /* --- Mqueries @subsection Hébergements & Les plus populaires width between 551px and 767px ---  */
+  /* --- Mqueries @subsection Hébergements & Les plus populaires width between 481px and 767px ---  */
 
   .sideBySide {
     flex-direction: column;
@@ -686,7 +700,7 @@ article li {
   .card {
     height: 30%;
   }
-  /* --- Mqueries @subsection Activités width between 551px and 767px ---  */
+  /* --- Mqueries @subsection Activités width between 481px and 767px ---  */
 
   #activities h2 {
     margin-bottom: 0;
@@ -726,7 +740,7 @@ article li {
     width: 400px;
     height: 150px;
   }
-  /* --- Mqueries FOOTER  width between 551px and 767px */
+  /* --- Mqueries FOOTER  width between 481px and 767px */
 
   footer {
     font-size: 1.8vh;
