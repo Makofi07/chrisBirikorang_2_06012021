@@ -969,3 +969,18 @@ article li {
     font-size: 1.6vh;
   }
 }
+
+/* Appareils  équipés d'écran dont la taille d'écran est superieur à 1199px*/
+@media (min-width: 1200px) and (max-width: 1312px) {
+  .oldport img,
+  .calanquesParc img {
+    height: 550px;
+  }
+}
+
+@media (min-width: 1313px) and (max-width: 1400px) {
+  .oldport img,
+  .calanquesParc img {
+    height: 600px;
+  }
+}
