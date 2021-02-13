@@ -375,9 +375,6 @@ article li {
 
 /* appareils équipés d'écran dont la taille est inférieur à 480px*/
 @media (max-width: 480px) {
-  .container {
-    background-color: aqua;
-  }
   .wrapper {
     width: 100%;
   }
