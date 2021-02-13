@@ -877,7 +877,7 @@ article li {
   }
 }
 
-/* Appareils  équipés d'écran dont la taille d'écran est superieur à 1199px*/
+/* Appareils  équipés d'écran dont la taille d'écran est comprise entre 1200px et 1312px*/
 @media (min-width: 1200px) and (max-width: 1312px) {
   .oldport img,
   .calanquesParc img {
