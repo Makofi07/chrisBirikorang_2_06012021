@@ -883,11 +883,20 @@ article li {
   .calanquesParc img {
     height: 550px;
   }
+  figcaption {
+    font-size: 1.6vh;
+  }
 }
 /* Appareils équipés d'écran dont la taille d'écran est comprise entre 1313px et 1400px*/
 @media (min-width: 1313px) and (max-width: 1400px) {
   .oldport img,
   .calanquesParc img {
     height: 600px;
+  }
+  figcaption {
+    font-size: 1.6vh;
+  }
+  .LC_fix {
+    height: 185px;
   }
 }
