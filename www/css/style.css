@@ -879,10 +879,10 @@ article li {
 
 /* Appareils  équipés d'écran dont la taille d'écran est comprise entre 1200px et 1312px*/
 @media (min-width: 1200px) and (max-width: 1312px) {
-  .oldport img,
+  /* .oldport img,
   .calanquesParc img {
     height: 550px;
-  }
+  } */
   figcaption {
     font-size: 1.6vh;
   }
@@ -897,6 +897,19 @@ article li {
     font-size: 1.6vh;
   }
   .LC_fix {
-    height: 185px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1401px) {
+  .oldport img,
+  .calanquesParc img {
+    height: 700px;
+  }
+  figcaption {
+    font-size: 1.6vh;
+  }
+  .LC_fix {
+    height: 300px;
   }
 }
